@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./CSS/style.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Almarai&family=Inter&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!--Navbar -->
+    <header>
+        <nav class="nav-container">
+            <div class="left-nav">
+                <img class="logo" src="./assets/images/BMWlogo.jpg" alt="logo-bmw">
+                <h1 class="bmw-title">Bayerische Motoren Werke</h1>
+            </div>
+
+            <div class="right-nav">
+                <ul class="text-right-nav">
+                    <li><a class="text-menu" href="#form">Register</a></li>
+                    <li><a class="text-menu" href="https://www.instagram.com/gustitreshana/">About</a></li>
+                    <li><a class="text-menu" href="https://wa.me/08123456789">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="title-header">
+            <h2 class="text-title-1">THIS IS COLLECTIONS OF BMW</h2>
+            <h3 class="text-title-2">LET'S START !</h3>
+        </div>
+
+        <div class="btn-header">
+            <button class="btn-menu-1" onclick="alert('Maaf, tombol ini belum berfungsi dengan baik')">OLD VERSION</button>
+            <button class="btn-menu-2" onclick="click()">NEW VERSION</button>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Video -->
+        <section class="video">
+            <iframe width="100%" height="500" src="https://www.youtube.com/embed/XaOrAnxEiI8?si=uqBU96tUyUCDvX0M"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen>
+            </iframe>
+
+            <!-- Popular Models Content -->
+        </section>
+
+        <!-- Popular Models Content -->
+        <h1 class="title-2">POPULAR MODELS</h1>
+        <section class="photo">
+            <div class="card">
+                <img class="e30" src="./assets/images/bmw-e30.jpg" alt="bmw-e30">
+                <h4>BMW E30</h4>
+                <p class="text-card">Old but gold</p>
+            </div>
+
+            <div class="card">
+                <img class="e36" src="./assets/images/bmw-e36.jpg" alt="bmw-e36">
+                <h4>BMW E36</h4>
+                <p class="text-card">Still looks good</p>
+            </div>
+
+            <div class="card">
+                <img class="e46" src="./assets/images/bmw-e46.jpg" alt="bmw-e46">
+                <h4>BMW E46</h4>
+                <p class="text-card">Better than before</p>
+            </div>
+
+            <div class="card">
+                <img class="e90" src="./assets/images/bmw-e90.jpg" alt="bmw-e90">
+                <h4>BMW E90</h4>
+                <p class="text-card">Student starter pack</p>
+            </div>
+
+            <div class="card">
+                <img class="g20" src="./assets/images/bmw-g20.jpg" alt="bmw-g20">
+                <h4>BMW G20</h4>
+                <p class="text-card">Businessman</p>
+            </div>
+
+            <div class="card">
+                <img class="i8" src="./assets/images/bmw-i8.jpg" alt="bmw-i8">
+                <h4>BMW i8</h4>
+                <p class="text-card">Rich people only</p>
+            </div>
+
+            <div class="card">
+                <img class="m3" src="./assets/images/bmw-m3.jpg" alt="bmw-m3">
+                <h4>BMW M3</h4>
+                <p class="text-card">Ready to race</p>
+            </div>
+
+            <div class="card">
+                <img class="m4" src="./assets/images/bmw-m4.jpg" alt="bmw-m4">
+                <h4>BMW M4</h4>
+                <p class="text-card">Fast and Stylish</p>
+            </div>
+        </section>
+
+        <!-- Form Content -->
+        <section class="form-field">
+            <h1 class="title-3">Join to Our Community!</h1>
+            <form>
+                <fieldset class="container-form-1">
+                    <legend>Personal Data: </legend>
+                    <div class="form-input">
+                        <label for="fullname">Full Name: </label>
+                        <input class="box-input" type="text" id="name" name="fullname" required>
+                    </div>
+
+                    <div class="form-input">
+                        <label for="email">Email: </label>
+                        <input class="box-input" type="email" id="eMail" name="mail" required>
+                    </div>
+
+                    <div class="radio-btn-form">
+                        <label>Are you living in Indonesia?</label>
+                        <div class="radio-btn">
+                            <label>
+                                <input type="radio" name="indonesia" value="yes"> Yes
+                            </label>
+                            <label>
+                                <input type="radio" name="indonesia" value="no"> No
+                            </label>
+                        </div>
+                    </div>
+                </fieldset>
+            </form>
+        </section>
+
+        <section class="form-field" id="form">
+            <form>
+                <fieldset class="container-form-1">
+                    <legend>Additional Information: </legend>
+                    <div class="checkbox-form">
+                        <div class="text-favorite">
+                            <p>What is your favorite BMW?</p>
+                        </div>
+
+                        <div class="checkbox-input">
+                            <input id="e30" type="checkbox" name="type" value="E30">
+                            <label for="e30">E30</label>
+                            <input id="e36" type="checkbox" name="type" value="E36">
+                            <label for="e36">E36</label>
+                            <input id="e46" type="checkbox" name="type" value="E46">
+                            <label for="e46">E46</label>
+                            <input id="e90" type="checkbox" name="type" value="E90">
+                            <label for="e90">E90</label>
+                            <input id="g20" type="checkbox" name="type" value="G20">
+                            <label for="g20">G20</label>
+                            <input id="i8" type="checkbox" name="type" value="i8">
+                            <label for="i8">i8</label>
+                            <input id="m3" type="checkbox" name="type" value="M3">
+                            <label for="m3">M3</label>
+                            <input id="m4" type="checkbox" name="type" value="M4">
+                            <label for="m4">M4</label>
+                        </div>
+                    </div>
+
+                    <div class="form-input">
+                        <p>Tell us why you like BMW!</p>
+                        <textarea name="text" id="text" cols="50" rows="5"></textarea>
+                    </div>
+                </fieldset>
+            </form>
+
+            <div class="btn-submit">
+                <button>SUBMIT</button>
+            </div>
+        </section>
+    </main>
+
+    <script src="./JS/script.js"></script>
+</body>
+
+</html>
