@@ -1,3 +1,7 @@
-function click() {
-    alert("maaf, saat ini tombol belum berfungsi dengan baik");
+function onClick1() {
+    location.href = "#bmwE30"
+}
+
+function onClick2() {
+    location.href = "#bmwG20"
 }
