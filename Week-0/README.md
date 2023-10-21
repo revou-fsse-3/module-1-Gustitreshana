@@ -17,6 +17,7 @@ I'm a private pilot at FASI (Federasi Aero Sport Indonesia). I'm a collage stude
 * **GitHub**    : https://github.com/Gustitreshana
 * **Instagram** : https://www.instagram.com/gustitreshana/
 * **E-mail**    : gustith2105@gmail.com
+* **Netlify**   : https://gustitreshana-bmw-collections.netlify.app/
 
 ## Favorite Website
 |Name   |URL            |Reason                             |
