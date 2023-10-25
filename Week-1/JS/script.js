@@ -1,9 +1,9 @@
 function onClick1() {
-    location.href = "#bmwE30"
+    window.location.href = "#bmwE30"
 }
 
 function onClick2() {
-    location.href = "#bmwG20"
+    window.location.href = "#bmwG20"
 }
 
 function btnSubmit() {
