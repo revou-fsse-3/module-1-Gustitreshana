@@ -8,6 +8,17 @@ body {
     scroll-behavior: smooth;
 }
 
+@font-face {
+    font-family: "Montserrat";
+    src: url(/Week-1/assets/Fonts/Montserrat/static/Montserrat-Regular.ttf);
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: url(/Week-1/assets/Fonts/Montserrat/static/Montserrat-Bold.ttf);
+    font-weight: 800;
+}
+
 /* Navbar Header */
 header {
     background-color: black;
@@ -34,6 +45,7 @@ header {
     display: flex;
     align-items: center;
     gap: 20px;
+    text-shadow: 2px 2px 5px #008ac9;
 }
 
 .logo {
@@ -42,6 +54,18 @@ header {
 
 .bmw-title {
     color: #fff;
+}
+
+@keyframes loop {
+    0% {
+        color: #fff;
+    }
+    100% {
+        color: #008ac9;
+    }
+    0% {
+        color: #fff;
+    }
 }
 
 .right-nav {
@@ -85,18 +109,46 @@ li>a:hover {
     gap: 20px;
     padding-top: 5%;
     margin-left: 5%;
+    text-shadow: 2px 2px 5px #008ac9;
 
 }
 
 .text-title-1 {
     font-size: 40px;
     color: #fff;
+    animation: 2s;
+    animation-name: slidein1;
+    
+}
+
+@keyframes slidein1 {
+    from {
+        margin-left: 60%;
+        color: #008ac9;
+    }
+    to {
+        margin-left: 0%;
+        color: #fff;
+    }
 }
 
 .text-title-2 {
     font-size: 36px;
     font-weight: 100;
     color: #fff;
+    animation-duration: 3s;
+    animation-name: slidein2;
+}
+
+@keyframes slidein2 {
+    from {
+        margin-left: -50%;
+        color: #008ac9;
+    }
+    to {
+        margin-left: 0%;
+        color: #fff;
+    }
 }
 
 .btn-header {
@@ -143,11 +195,76 @@ li>a:hover {
     transition: all 0.3s ease-in-out;
 }
 
+/* Popular BMW */
+.popular-bmw {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 48px;
+    font-family: "Montserrat";
+    background-color: rgba(0, 0, 0, 0.032);
+}
+
+.popular-card {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.popular-card>p {
+    font-size: 30px;
+    font-weight: 800;
+    letter-spacing: 10px;
+    text-shadow: 3px 3px 5px #008ac9;
+    color: #222222;
+}
+
+.bmw-series {
+    width: 100%;
+    height: 100%;
+}
+
+#seri3 {
+    grid-column: 1 / span 5;
+    grid-row: 1 / span 4;
+}
+
+#seri5 {
+    grid-column: 6 / span 5;
+    grid-row: 1 / span 2;
+}
+
+#seri7 {
+    grid-column: 6 / span 5;
+    grid-row: 3 / span 2;
+}
+
+#x1 {
+    grid-column: 1 / span 3;
+    grid-row: 5 / span 2;
+}
+
+#x3 {
+    grid-column: 4 / span 3;
+    grid-row: 5 / span 2;
+}
+
+#x5 {
+    grid-column: 7 / span 3;
+    grid-row: 5 / span 2;
+}
+
+/*VERSION TITLE */
+.version-title {
+    text-align: center;
+}
+
 /* Section Card */
 .title-2 {
     text-align: center;
     font-size: 48px;
     padding: 48px;
+    letter-spacing: 10px;
 }
 
 .photo {
@@ -167,6 +284,7 @@ li>a:hover {
 
 .e30 {
     width: 100%;
+    height: 463px;
 }
 
 .e36 {
@@ -186,6 +304,7 @@ li>a:hover {
 
 .g20 {
     width: 100%;
+    height: 463px;
 }
 
 .i8 {
@@ -195,6 +314,7 @@ li>a:hover {
 
 .m3 {
     width: 100%;
+    height: 463px;
 }
 
 .m4 {
@@ -221,6 +341,7 @@ form {
     display: flex;
     justify-content: center;
     padding-bottom: 10px;
+    padding-top: 20px;
 }
 
 .title-3 {
@@ -503,6 +624,11 @@ form {
         color: grey;
     }
 
+    .popular-bmw {
+        display: flex;
+        flex-direction: column;
+    }
+    
     .container-form-1 {
         width: 90%;
         height: fit-content;
