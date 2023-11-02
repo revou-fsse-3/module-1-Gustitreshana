@@ -55,7 +55,7 @@ header {
 .bmw-title {
     color: #fff;
     cursor: pointer;
-    animation: colorChange 3s infinite;
+    animation: colorChange 5s infinite;
 }
 
 @keyframes colorChange {
@@ -372,9 +372,18 @@ h4 {
 
 form {
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    padding-bottom: 10px;
+    align-items: center;
+    gap: 10px;
     padding-top: 20px;
+    background-image: url(/Week-1/assets/images/bmw-i8.jpg);
+    background-repeat: no-repeat;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    padding-bottom: 20px;
+    text-shadow: 2px 2px 2px black;
 }
 
 .title-3 {
@@ -387,7 +396,7 @@ form {
 .container-form-1 {
     width: 35%;
     height: fit-content;
-    background-color: #222;
+    background-color: black;
     color: #fff;
 }
 
@@ -444,14 +453,17 @@ form {
 .btn-submit {
     display: flex;
     justify-content: center;
-    margin-top: 5px;
+    align-items: center;
+    width: 100%;
 }
 
 .btn-submit>button {
+    width: 100%;
+    height: 35px;
     width: 35%;
     height: 35px;
     font-size: 18px;
-    background-color: transparent;
+    background-color: #1c69d4;
     color: #fff;
     border: 2px solid #fff;
 }
@@ -459,10 +471,50 @@ form {
 .btn-submit>button:hover {
     cursor: pointer;
     background-color: #fff;
-    color: #008ac9;
-    border: none;
-    border: 2px solid #008ac9;
-    transition: all 0.3s ease-in-out;
+    color: #1c69d4;
+    border: 2px solid #1c69d4;
+    transition: .3s ease-in-out;
+}
+
+footer {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    background-color: black;
+    border-top: 2px solid #008ac9;
+    border-bottom: 2px solid #008ac9;
+    overflow: hidden;
+}
+
+footer>h5 {
+    font-size: 24px;
+    font-family: "Montserrat";
+    color: #fff;
+    letter-spacing: 5px;
+}
+
+h5 {
+    padding: 50px;
+    white-space: nowrap;
+    animation: slide 5s linear infinite;
+}
+
+@keyframes slide {
+    0% {
+        transform: translateX(0);
+        color: #fff;
+        text-shadow: 2px 2px 5px #008ac9;
+    }
+    50% {
+        color: #008ac9;
+        text-shadow: 2px 2px 5px red;
+    }
+    100% {
+        transform: translateX(-100%);
+        color: #fff;
+        text-shadow: 2px 2px 5px #008ac9;
+    }
 }
 
 @media only screen and (max-width: 500px) {
