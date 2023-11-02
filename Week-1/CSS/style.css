@@ -210,6 +210,54 @@ li>a:hover {
     transition: all 0.3s ease-in-out;
 }
 
+/* GALLERY BMW */
+.slider-photo {
+    overflow: hidden;
+}
+
+.slider-photo figure {
+    position: relative;
+    width: 500%;
+    margin: 0;
+    left: 0;
+    animation: slider 20s infinite;
+}
+
+.slider-photo figure img {
+    float: left;
+    width: 20%;
+}
+
+@keyframes slider {
+    0% {
+        left: 0;
+    }
+    20% {
+        left: 0;
+    }
+    25% {
+        left: -100%;
+    }
+    45% {
+        left: -100%;
+    }
+    50% {
+        left: -200%;
+    }
+    70% {
+        left: -200%;
+    }
+    75% {
+        left: -300%;
+    }
+    95% {
+        left: -300%;
+    }
+    100% {
+        left: -400%;
+    }
+}
+
 /* Popular BMW */
 .popular-bmw {
     display: grid;
@@ -377,7 +425,7 @@ form {
     align-items: center;
     gap: 10px;
     padding-top: 20px;
-    background-image: url(/Week-1/assets/images/bmw-i8.jpg);
+    background-image: url(/Week-1/assets/images/background-img-i8.jpg);
     background-repeat: no-repeat;
     width: 100%;
     background-size: cover;
