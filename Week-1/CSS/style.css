@@ -55,24 +55,32 @@ header {
 .bmw-title {
     color: #fff;
     cursor: pointer;
+    animation: colorChange 3s infinite;
+}
+
+@keyframes colorChange {
+    0% {
+        color: #fff;
+        text-shadow: 2px 2px 5px #008ac9;
+    }
+    50% {
+        color: #008ac9;
+        text-shadow: 2px 2px 5px red;
+    }
+    100% {
+        color: #fff;
+        text-shadow: 2px 2px 5px #008ac9;
+    }
+}
+
+.bmw-title {
+    color: #fff;
+    cursor: pointer;
     transition: all 1s ease-in-out;
 }
 
 .bmw-title:hover {
-    color: #008ac9;
     letter-spacing: 5px;
-}
-
-@keyframes loop {
-    0% {
-        color: #fff;
-    }
-    100% {
-        color: #008ac9;
-    }
-    0% {
-        color: #fff;
-    }
 }
 
 .right-nav {
