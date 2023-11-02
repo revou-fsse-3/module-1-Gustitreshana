@@ -54,6 +54,13 @@ header {
 
 .bmw-title {
     color: #fff;
+    cursor: pointer;
+    transition: all 1s ease-in-out;
+}
+
+.bmw-title:hover {
+    color: #008ac9;
+    letter-spacing: 5px;
 }
 
 @keyframes loop {
@@ -217,11 +224,13 @@ li>a:hover {
     letter-spacing: 10px;
     text-shadow: 3px 3px 5px #008ac9;
     color: #222222;
+    margin-top: -30px;
 }
 
 .bmw-series {
     width: 100%;
     height: 100%;
+    object-fit: contain;
 }
 
 #seri3 {
@@ -280,51 +289,67 @@ li>a:hover {
     padding: 10px;
     background-color: black;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    filter: grayscale(100%);
+    transition: all .5s ease-in-out;
+}
+
+.card:hover {
+    cursor: pointer;
+    filter: grayscale(0%);
 }
 
 .e30 {
     width: 100%;
     height: 463px;
+    object-fit: cover;
 }
 
 .e36 {
     width: 100%;
     height: 463px;
+    object-fit: cover;
 }
 
 .e46 {
     width: 100%;
     height: 480px;
+    object-fit: cover;
 }
 
 .e90 {
     width: 100%;
     height: 480px;
+    object-fit: cover;
 }
 
 .g20 {
     width: 100%;
     height: 463px;
+    object-fit: cover;
 }
 
 .i8 {
     width: 100%;
     height: 463px;
+    object-fit: cover;
 }
 
 .m3 {
     width: 100%;
     height: 463px;
+    object-fit: cover;
 }
 
 .m4 {
     width: 100%;
     height: 463px;
+    object-fit: cover;
 }
 
 h4 {
     font-size: 48px;
     color: #fff;
+    text-shadow: 2px 2px 5px #008ac9;
 }
 
 .text-card {
@@ -365,6 +390,13 @@ form {
     padding-left: 20px;
     margin-top: 10px;
     margin-bottom: 10px;
+}
+
+.birth-date {
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+    gap: 10px;
 }
 
 .radio-btn-form {
@@ -460,6 +492,17 @@ form {
         transform: translate(0, -11px) rotate(45deg);
     }
 
+    .bmw-title {
+        color: #fff;
+        cursor: pointer;
+        transition: all 1s ease-in-out;
+    }
+    
+    .bmw-title:hover {
+        color: #008ac9;
+        letter-spacing: 2px;
+    }
+
     .text-right-nav {
         position: fixed;
         left: -100%;
@@ -521,6 +564,19 @@ form {
     .text-title-1 {
         font-size: 24px;
         color: #fff;
+        animation: 3s;
+        animation-name: slidein1;
+    }
+
+    @keyframes slidein1 {
+        from {
+            margin-left: -100%;
+            color: #008ac9; 
+        }
+        to {
+            margin-left: 0%;
+            color: #fff;
+        }
     }
 
     .text-title-2 {
