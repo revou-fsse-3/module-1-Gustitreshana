@@ -85,7 +85,6 @@ li>a:hover {
     gap: 20px;
     padding-top: 5%;
     margin-left: 5%;
-
 }
 
 .text-title-1 {
@@ -219,8 +218,6 @@ h4 {
 
 form {
     display: flex;
-    justify-content: center;
-    padding-bottom: 10px;
 }
 
 .title-3 {
@@ -233,7 +230,6 @@ form {
 .container-form-1 {
     width: 35%;
     height: fit-content;
-    background-color: #222;
     color: #fff;
 }
 
@@ -283,14 +279,6 @@ form {
 .btn-submit {
     display: flex;
     justify-content: center;
-    margin-top: 5px;
-}
-
-.btn-submit>button {
-    width: 35%;
-    height: 35px;
-    font-size: 18px;
-    background-color: transparent;
     color: #fff;
     border: 2px solid #fff;
 }
@@ -298,10 +286,6 @@ form {
 .btn-submit>button:hover {
     cursor: pointer;
     background-color: #fff;
-    color: #008ac9;
-    border: none;
-    border: 2px solid #008ac9;
-    transition: all 0.3s ease-in-out;
 }
 
 @media only screen and (max-width: 500px) {

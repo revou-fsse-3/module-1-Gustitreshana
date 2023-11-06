@@ -39,7 +39,7 @@ I'm a private pilot at FASI (Federasi Aero Sport Indonesia). I'm a collage stude
 ## Heading 2
 ### Heading 3
 
-This is how to make a Heading
+This is how to make a Heading.
 ```
 
 ### HTML
