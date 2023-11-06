@@ -1,4 +1,4 @@
-// Old Version button
+// Old Version button.
 function onClick1() {
     window.location.href = "#bmwE30"
 }
