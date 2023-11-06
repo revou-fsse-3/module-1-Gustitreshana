@@ -1,0 +1,541 @@
+*,
+html,
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Almarai', sans-serif;
+    scroll-behavior: smooth;
+}
+
+/* Navbar Header */
+header {
+    background-color: black;
+    height: 105px;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+.container-TH {
+    background-color: black;
+}
+
+.nav-container {
+    display: flex;
+    margin-left: 5%;
+    border-bottom: 1px solid #fff;
+    height: 100px;
+    width: 90%;
+}
+
+.left-nav {
+    padding-left: 48px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.logo {
+    width: 4%;
+}
+
+.bmw-title {
+    color: #fff;
+}
+
+.right-nav {
+    display: flex;
+    align-items: center;
+}
+
+.text-right-nav {
+    display: flex;
+    font-size: 20px;
+    gap: 48px;
+    font-weight: bold;
+    padding-right: 48px;
+    list-style-type: none;
+}
+
+li>a {
+    border: 2px solid #fff;
+    padding: 3px 36px;
+    border-radius: 10px;
+}
+
+li>a:hover {
+    background-color: #fff;
+}
+
+.text-menu {
+    color: #fff;
+    text-decoration: none;
+}
+
+.text-menu:hover {
+    cursor: pointer;
+    color: #008ac9;
+    transition: all 0.3s ease-in-out;
+}
+
+.title-header {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-top: 5%;
+    margin-left: 5%;
+
+}
+
+.text-title-1 {
+    font-size: 40px;
+    color: #fff;
+}
+
+.text-title-2 {
+    font-size: 36px;
+    font-weight: 100;
+    color: #fff;
+}
+
+.btn-header {
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    gap: 10px;
+    margin-left: 5%;
+    margin-top: 2%;
+}
+
+.btn-menu-1 {
+    padding: 20px;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: #1c69d4;
+    color: #fff;
+    border: none;
+}
+
+.btn-menu-1:hover {
+    cursor: pointer;
+    background-color: #fff;
+    color: #008ac9;
+    border: 2px solid #008ac9;
+    transition: all 0.3s ease-in-out;
+}
+
+.btn-menu-2 {
+    padding: 20px;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: transparent;
+    color: #fff;
+    border: 2px solid #fff;
+}
+
+.btn-menu-2:hover {
+    cursor: pointer;
+    background-color: #fff;
+    color: #008ac9;
+    border: none;
+    border: 2px solid #008ac9;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Section Card */
+.title-2 {
+    text-align: center;
+    font-size: 48px;
+    padding: 48px;
+}
+
+.photo {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.card {
+    width: 100%;
+    height: 600px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: black;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.e30 {
+    width: 100%;
+}
+
+.e36 {
+    width: 100%;
+    height: 463px;
+}
+
+.e46 {
+    width: 100%;
+    height: 480px;
+}
+
+.e90 {
+    width: 100%;
+    height: 480px;
+}
+
+.g20 {
+    width: 100%;
+}
+
+.i8 {
+    width: 100%;
+    height: 463px;
+}
+
+.m3 {
+    width: 100%;
+}
+
+.m4 {
+    width: 100%;
+    height: 463px;
+}
+
+h4 {
+    font-size: 48px;
+    color: #fff;
+}
+
+.text-card {
+    font-size: 24px;
+    color: grey;
+}
+
+/* Section Form */
+.form-field {
+    background-color: black;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 10px;
+}
+
+.title-3 {
+    color: #fff;
+    text-align: center;
+    padding-top: 24px;
+    padding-bottom: 20px;
+}
+
+.container-form-1 {
+    width: 35%;
+    height: fit-content;
+    background-color: #222;
+    color: #fff;
+}
+
+.form-input {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-left: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.radio-btn-form {
+    margin-top: 10px;
+    padding-left: 20px;
+    padding-bottom: 10px;
+}
+
+.radio-btn {
+    margin-top: 10px;
+}
+
+.box-input {
+    width: 95%;
+    height: 24px;
+}
+
+.checkbox-form {
+    padding-left: 20px;
+    margin-top: 10px;
+    gap: 20px;
+}
+
+.opt-group {
+    margin-bottom: 10px;
+}
+
+.checkbox-input {
+    margin-top: 10px;
+}
+
+.txt-area {
+    width: 95%;
+    height: 80px;
+}
+
+.btn-submit {
+    display: flex;
+    justify-content: center;
+    margin-top: 5px;
+}
+
+.btn-submit>button {
+    width: 35%;
+    height: 35px;
+    font-size: 18px;
+    background-color: transparent;
+    color: #fff;
+    border: 2px solid #fff;
+}
+
+.btn-submit>button:hover {
+    cursor: pointer;
+    background-color: #fff;
+    color: #008ac9;
+    border: none;
+    border: 2px solid #008ac9;
+    transition: all 0.3s ease-in-out;
+}
+
+@media only screen and (max-width: 500px) {
+    .toggle-btn {
+        display: flex;
+    }
+
+    .hamburger {
+        display: inline-block;
+        cursor: pointer;
+        background-color: transparent;
+        border: none;
+    }
+
+    .bar1,
+    .bar2,
+    .bar3 {
+        width: 30px;
+        height: 3px;
+        background-color: #fff;
+        border-radius: 15px;
+        margin: 8px;
+        transition: .5s;
+    }
+
+    .change .bar1 {
+        transform: translate(0, 11px) rotate(-45deg);
+    }
+
+    .change .bar2 {
+        opacity: 0;
+    }
+
+    .change .bar3 {
+        transform: translate(0, -11px) rotate(45deg);
+    }
+
+    .text-right-nav {
+        position: fixed;
+        left: -100%;
+        height: 180px;
+        top: 100px;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        transition: .5s;
+        background-color: black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    li>a {
+        border: none;
+        font-size: 16px;
+    }
+
+    .text-menu {
+        color: #fff;
+        text-decoration: none;
+    }
+
+    .text-right-nav.active {
+        left: 0;
+    }
+
+    .right-nav {
+        display: block;
+        align-items: center;
+    }
+
+    .left-nav {
+        padding-left: 0px;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .logo {
+        width: 13%;
+    }
+
+    .title-header {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        padding-top: 5%;
+        margin-left: 5%;
+    }
+
+    .bmw-title {
+        color: #fff;
+        font-size: 20px;
+    }
+
+    .text-title-1 {
+        font-size: 24px;
+        color: #fff;
+    }
+
+    .text-title-2 {
+        font-size: 24px;
+        font-weight: 100;
+        color: #fff;
+    }
+
+    .btn-header {
+        padding: 5% 0% 5% 0%;
+        display: flex;
+        flex-direction: row;
+        width: auto;
+        gap: 10px;
+        margin-left: 5%;
+        margin-top: 2%;
+    }
+
+    .btn-menu-1 {
+        padding: 10px;
+        font-size: 12px;
+        font-weight: 600;
+        background-color: #1c69d4;
+        color: #fff;
+        border: none;
+        width: 45%;
+    }
+
+    .btn-menu-2 {
+        padding: 10px;
+        font-size: 12px;
+        font-weight: 600;
+        background-color: transparent;
+        color: #fff;
+        border: 2px solid #fff;
+        width: 45%;
+    }
+
+    .title-2 {
+        text-align: center;
+        font-size: 24px;
+        padding: 24px;
+    }
+
+    .photo {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .fit-height {
+        height: fit-content;
+    }
+
+    .e30 {
+        width: 100%;
+        height: auto;
+    }
+
+    .e36 {
+        width: 100%;
+        height: auto;
+    }
+
+    .e46 {
+        width: 100%;
+        height: auto;
+    }
+
+    .e90 {
+        width: 100%;
+        height: auto;
+    }
+
+    .g20 {
+        width: 100%;
+        height: auto;
+    }
+
+    .i8 {
+        width: 100%;
+        height: auto;
+    }
+
+    .m3 {
+        width: 100%;
+        height: auto;
+    }
+
+    .m4 {
+        width: 100%;
+        height: auto;
+    }
+
+    h4 {
+        font-size: 30px;
+        color: #fff;
+    }
+
+    .text-card {
+        font-size: 18px;
+        color: grey;
+    }
+
+    .container-form-1 {
+        width: 90%;
+        height: fit-content;
+        background-color: #222;
+        color: #fff;
+    }
+
+    .title-3 {
+        color: #fff;
+        text-align: center;
+        padding-top: 24px;
+        padding-bottom: 0px;
+    }
+
+    form {
+        display: flex;
+        justify-content: center;
+        padding-top: 5%;
+    }
+
+    .btn-submit>button {
+        width: 90%;
+        height: 35px;
+        font-size: 20px;
+        background-color: transparent;
+        color: #fff;
+        border: 2px solid #fff;
+        margin-top: 8px;
+    }
+}
+
+@media only screen and (min-width: 501px) {
+    .toggle-btn {
+        display: none;
+    }
+}
